@@ -20,12 +20,12 @@ public class HelloWorldController {
 
     @GetMapping("/{id}")
     public UserEntity get(@PathVariable long id) {
-//        log.info("insert");
-//        UserEntity user = new UserEntity();
-//        user.setId(100L);
-//        user.setName("test aaa");
-//        user.setDescription("we test");
-//        int a = userDao.insert(user);
+        log.info("insert");
+        UserEntity user = new UserEntity();
+        user.setId(100L);
+        user.setName("test aaa");
+        user.setDescription("we test");
+        int a = userDao.insert(user);
 //        log.info("inset "+ a);
         log.info("inget");
         return userDao.findById(id);}
